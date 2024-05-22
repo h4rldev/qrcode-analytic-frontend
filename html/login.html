@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-700">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+
+  <meta name="title" content="NTI Gymnasiet - Karlstad: Lunch | Administrator Login" />
+  <meta name="description" content="NTI Gymnasiet - Karlstad: Lunch Analytic | Administrator Login" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="analytic.h4rl.xn--q9jyb4c/login" />
+  <meta property="og:title" content="NTI Gymnasiet - Karlstad: Lunch | Administrator Login" />
+  <meta property="og:description" content="NTI Gymnasiet - Karlstad: Lunch Analytic | Administrator Login" />
+  <meta property="og:image" content="./assets/image.webp" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="analytic.h4rl.xn--q9jyb4c/login" />
+  <meta property="twitter:title" content="NTI Gymnasiet - Karlstad: Lunch | Administrator Login" />
+  <meta property="twitter:description" content="NTI Gymnasiet - Karlstad: Lunch Analytic | Administrator Login" />
+  <meta property="twitter:image" content="./assets/image.webp" />
+
+  <link rel="icon" type="image/webp" href="../assets/image.webp" />
+  <title> NTI Lunch | Administrator Login</title>
+</head>
+
+<body class="bg-gray-700 text-white">
+  <header class="flex flex-row items-center justify-center">
+    <a href="/" target="_self"
+      class="text-white absolute left-3 top-0 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out font-jetbrains font-bold py-4 m0">
+      &lt; Return to home?
+    </a>
+    <h1 class="text-center relative underline underline-offset-2 font-bold decoration-blue-400 font-alata">
+      Administrator Login
+    </h1>
+  </header>
+  <main class="flex flex-col justify-center items-center">
+    <section
+      class="p6 border-4 bg-blue-300 flex flex-col gap-3 justify-center items-center border-blue-400 border-solid rounded-2xl">
+      <div class="font-alata text-sm p-1 text-center">
+        <p class="p0 m0 text-green-600 underline decoration-green-600 text-base" id="title_good"> </p>
+        <p class="p0 m0 text-red underline decoration-red text-base" id="title_bad"> </p>
+        <p class="p0 m0 text-green-600" id="message_good"> </p>
+        <p class="p0 m0 text-red" id="message_bad"> </p>
+      </div>
+      <form id="login" method="post" class="flex flex-col gap-5">
+        <div>
+          <input
+            class="rounded-lg p1 border-2 bg-transparent transition-colors duration-400 ease-in-out text-white font-bold placeholder:text-white placeholder:font-bold border-solid hover:bg-blue-400 border-blue-400 hover:border-blue-600 focus:outline-none focus:border-blue-800 focus:bg-blue-400"
+            type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+
+        <div>
+          <input
+            class="rounded-lg p1 border-2 bg-transparent transition-colors duration-400 ease-in-out text-white font-bold placeholder:text-white hover:bg-blue-400 placeholder:font-bold border-solid border-blue-400 hover:border-blue-600 focus:outline-none focus:border-blue-800 focus:bg-blue-400"
+            type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            class="bg-blue-300 w-full p-2 text-white transition-colors duration-400 ease-in-out font-bold hover:cursor-pointer rounded-xl border-solid border-2 border-blue-400 hover:border-blue-600 hover:bg-blue-400 active:border-blue-800 shadow-none"
+            type="submit">Submit</button>
+        </div>
+      </form>
+      <script src="../js/login.js" await></script>
+    </section>
+  </main>
+  <footer class="mt-4">
+    <section class="flex flex-col justify-center items-center text-lg font-alata">
+      <p class="p0 m0">
+        <span class="text-blue"> qrcode analytic </span> v0.1 - made with <span class="text-red">❤</span> by
+        <a class="text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+          href="
+          https://github.com/h4rldev" target="_blank">h4rl</a>
+      </p>
+      <p class="flex flex-row list-none justify-center items-center p0 m0">
+        This website is powered by <a
+          class="mx-1 text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+          href="https://ntex.rs" target="_blank"> ntex </a> &amp; <a
+          class="mx-1 text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+          href="https://unocss.dev" target="_blank"> unocss </a>
+      </p>
+      <ul class="flex flex-row flex-wrap list-none justify-center items-center p0 m0 gap-2">
+        <li>
+          <a class="text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+            href="/privacy" target="_self"> Privacy Policy </a>
+        </li>
+        <li>
+          <a class="text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+            href="/contact" target="_self"> Contact </a>
+        </li>
+        <li>
+          <a class="text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+            href="/login" target="_self"> Administrator Login </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+</body>
+
+</html>

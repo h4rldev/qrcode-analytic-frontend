@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-700">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+
+  <meta name="title" content="NTI Gymnasiet - Karlstad: Lunch | Administrator Dashboard" />
+  <meta name="description" content="NTI Gymnasiet - Karlstad: Lunch Analytic | Administrator Dashboard" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="analytic.h4rl.xn--q9jyb4c/dashboard" />
+  <meta property="og:title" content="NTI Gymnasiet - Karlstad: Lunch | Administrator Dashboard" />
+  <meta property="og:description" content="NTI Gymnasiet - Karlstad: Lunch Analytic | Administrator Dashboard" />
+  <meta property="og:image" content="./assets/image.webp" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="analytic.h4rl.xn--q9jyb4c/dashboard" />
+  <meta property="twitter:title" content="NTI Gymnasiet - Karlstad: Lunch | Administrator Dashboard" />
+  <meta property="twitter:description" content="NTI Gymnasiet - Karlstad: Lunch Analytic | Administrator Dashboard" />
+  <meta property="twitter:image" content="./assets/image.webp" />
+
+  <link rel="icon" type="image/webp" href="../assets/image.webp" />
+  <title> NTI Lunch | Administrator Dashboard</title>
+</head>
+
+<body class="text-white">
+  <header class="flex flex-row items-center justify-center">
+    <a href="/" target="_self"
+      class="text-white absolute left-3 top-0 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out font-jetbrains font-bold py-4 m0">
+      &lt; Return to home?
+    </a>
+    <h1 class="text-center relative underline underline-offset-2 font-bold decoration-blue-400 font-alata">
+      Dashboard
+    </h1>
+  </header>
+
+  <main>
+    <section class="flex flex-row flex-wrap justify-center items-center gap-4 portrait:flex-col">
+      <div class="min-w-1/4 bg-blue-400 border-4 border-blue-600 border-solid rounded-2xl font-alata p-4">
+        <h1> Data today </h1>
+        <canvas id="today" class="bg-white"></canvas>
+      </div>
+
+      <div class="min-w-1/4 bg-blue-400 border-4 border-blue-600 border-solid rounded-2xl font-alata p-4">
+        <h1> Data this week </h1>
+        <canvas id="week" class="bg-white"></canvas>
+      </div>
+
+      <div class="min-w-1/4 bg-blue-400 border-4 border-blue-600 border-solid rounded-2xl font-alata p-4">
+        <h1> Data this month </h1>
+        <canvas id="month" class="bg-white"></canvas>
+      </div>
+
+      <div class="min-w-1/4 bg-blue-400 border-4 border-blue-600 border-solid rounded-2xl font-alata p-4">
+        <h1> Data this quarter </h1>
+        <canvas id="quarter" class="bg-white"></canvas>
+      </div>
+
+      <div class="min-w-1/4 bg-blue-400 border-4 border-blue-600 border-solid rounded-2xl font-alata p-4">
+        <h1> Data this half year </h1>
+        <canvas id="halfyear" class="bg-white"></canvas>
+      </div>
+
+      <div class="min-w-1/4 bg-blue-400 border-4 border-blue-600 border-solid rounded-2xl font-alata p-4">
+        <h1> All data </h1>
+        <canvas id="all" class="bg-white"></canvas>
+      </div>
+    </section>
+    <script src="../js/libraries/chart.js"></script>
+    <script src="../js/dashboard.js" await></script>
+  </main>
+
+  <footer class="mt-4">
+    <section class="flex flex-col justify-center items-center text-lg font-alata">
+      <p class="p0 m0">
+        <span class="text-blue"> qrcode analytic </span> v0.1 - made with <span class="text-red">❤</span> by
+        <a class="text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+          href="
+          https://github.com/h4rldev" target="_blank">h4rl</a>
+      </p>
+      <p class="flex flex-row list-none justify-center items-center p0 m0">
+        This website is powered by <a
+          class="mx-1 text-blue-200 underline decoration-transparent hover:decoratio-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+          href="https://ntex.rs" target="_blank"> ntex </a> &amp; <a
+          class="mx-1 text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+          href="https://unocss.dev" target="_blank"> unocss </a>
+      </p>
+      <ul class="flex flex-row flex-wrap list-none justify-center items-center p0 m0 gap-2">
+        <li>
+          <a class="text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+            href="/privacy" target="_self"> Privacy Policy </a>
+        </li>
+        <li>
+          <a class="text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+            href="/contact" target="_self"> Contact </a>
+        </li>
+        <li>
+          <a class="text-blue-200 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 decoration-offset-4 transition-colors duration-400 ease-in-out"
+            href="/login" target="_self"> Administrator Login </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+</body>
+
+</html>
